@@ -1,0 +1,28 @@
+﻿@model List<DictionaryEntry>
+
+
+
+
+<h1>My Dictionary</h1>
+
+<p>Enter a search query and hit enter.</p>
+
+<form method="post" action="/dictionary">
+    <input type="text" name="query" style="width: 100%;" />
+</form>
+
+@if (Model.Count == 0)
+{
+    <p>No entries found matching the criteria.</p>
+}
+else
+{
+    <ul>
+    @foreach (var entry in Model)
+    {
+        <li><b>@entry.Word</b> - @entry.Definition</li>
+    }
+    </ul>
+}
+
+
