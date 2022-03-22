@@ -11,6 +11,7 @@ Search and wildcards:
 	* "*al" should match "pal" and "artisinal" but not "wall"
 	* "al*" should match "alter" and "all" but not "fall"
 	* "*al*" should match "pal", "fall", "alter"
+	* If there is no wildcard, the strings completely match.
 	* There should be unit tests for all three scenarios.
 
 When you first get to the dictionary page, the results say "No entries found matching the criteria." Instead, it should show nothing. So there's three cases.
