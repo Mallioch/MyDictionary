@@ -19,3 +19,5 @@ When you first get to the dictionary page, the results say "No entries found mat
 	* When you first get there, nothing should appear below the search box.
 	* If you search and find something, it should show
 	* If you search and find nothing, you should show the existing message: "No entries found matching the criteria."
+
+The dictionary for this project came from https://github.com/sujithps/Dictionary.
